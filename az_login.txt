@@ -1,0 +1,16 @@
+[
+  {
+    "cloudName": "AzureCloud",
+    "homeTenantId": "f7a17af6-1c5c-4a36-aa8b-f5be247aa4ba",
+    "id": "e95de1d3-5b7c-4229-bbc9-bfcbb3a9aa15",
+    "isDefault": true,
+    "managedByTenants": [],
+    "name": "Azure subscription 1",
+    "state": "Enabled",
+    "tenantId": "f7a17af6-1c5c-4a36-aa8b-f5be247aa4ba",
+    "user": {
+      "name": "aki.liu@suse.com",
+      "type": "user"
+    }
+  }
+]
