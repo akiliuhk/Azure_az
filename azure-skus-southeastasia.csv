@@ -1,0 +1,308 @@
+ResourceType      Locations      Name                  Zones    Restrictions
+----------------  -------------  --------------------  -------  --------------------------------------------------------------------------------------------------------------------------------------------------------
+availabilitySets  southeastasia  Aligned                        None
+availabilitySets  southeastasia  Classic                        None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  Premium_LRS           1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  StandardSSD_LRS       1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  Standard_LRS          1,2,3    None
+disks             southeastasia  UltraSSD_LRS          1,2,3    None
+hostGroups/hosts  southeastasia  DASv4-Type1           1,2,3    None
+hostGroups/hosts  southeastasia  DCSv2-Type1           2,3      None
+hostGroups/hosts  southeastasia  DDSv4-Type1           1,2,3    None
+hostGroups/hosts  southeastasia  DSv3-Type1            1,2,3    None
+hostGroups/hosts  southeastasia  DSv3-Type2            1,2,3    None
+hostGroups/hosts  southeastasia  DSv3-Type3            1,2,3    None
+hostGroups/hosts  southeastasia  DSv4-Type1            1,2,3    None
+hostGroups/hosts  southeastasia  EASv4-Type1           1,2,3    None
+hostGroups/hosts  southeastasia  EDSv4-Type1           1,2,3    None
+hostGroups/hosts  southeastasia  ESv3-Type1            1,2,3    None
+hostGroups/hosts  southeastasia  ESv3-Type2            1,2,3    None
+hostGroups/hosts  southeastasia  ESv3-Type3            1,2,3    None
+hostGroups/hosts  southeastasia  ESv4-Type1            1,2,3    None
+hostGroups/hosts  southeastasia  FSv2-Type2            1,2,3    None
+hostGroups/hosts  southeastasia  FSv2-Type3            1,2,3    None
+hostGroups/hosts  southeastasia  LSv2-Type1            1,2,3    None
+hostGroups/hosts  southeastasia  Mdmsv2MedMem-Type1    1,2      None
+hostGroups/hosts  southeastasia  Mdsv2MedMem-Type1     1,2      None
+hostGroups/hosts  southeastasia  Mmsv2MedMem-Type1     1,2      None
+hostGroups/hosts  southeastasia  MS-Type1              1,2      None
+hostGroups/hosts  southeastasia  MSm-Type1             1,2      None
+hostGroups/hosts  southeastasia  MSmv2-Type1           1,2      None
+hostGroups/hosts  southeastasia  MSv2-Type1            1,2      None
+hostGroups/hosts  southeastasia  Msv2MedMem-Type1      1,2      None
+hostGroups/hosts  southeastasia  NVASv4-Type1          2        None
+hostGroups/hosts  southeastasia  NVSv3-Type1           2        None
+snapshots         southeastasia  Premium_LRS                    None
+snapshots         southeastasia  Standard_LRS                   None
+snapshots         southeastasia  Standard_ZRS                   None
+virtualMachines   southeastasia  Standard_A1_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_A2m_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_A2_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_A4m_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_A4_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_A8m_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_A8_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B12ms        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B16ms        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B1ls         1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B1ms         1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B1s          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B20ms        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B2ms         1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B2s          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B4ms         1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_B8ms         1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D11_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D12_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D13_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D14_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D16ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D16d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D16s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D16s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D16_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D16_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D1_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2ds_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2d_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2s_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2s_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2_v3        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D2_v4        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D32ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D32d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D32s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D32s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D32_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D32_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D3_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D48ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D48d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D48s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D48s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D48_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D48_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4ds_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4d_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4s_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4s_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4_v3        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D4_v4        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D5_v2        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D64ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D64d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D64s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D64s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D64_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D64_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D8ds_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D8d_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D8s_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D8s_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D8_v3        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_D8_v4        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DC1s_v2      2,3      None
+virtualMachines   southeastasia  Standard_DC2s_v2      2,3      None
+virtualMachines   southeastasia  Standard_DC4s_v2      2,3      None
+virtualMachines   southeastasia  Standard_DC8_v2       2,3      None
+virtualMachines   southeastasia  Standard_DS11-1_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS11_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS12-1_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS12-2_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS12_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS13-2_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS13-4_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS13_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS14-4_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS14-8_v2    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS14_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS1_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS2_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS3_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS4_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_DS5_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16-4ds_v4   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16-4s_v3    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16-4s_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16-8ds_v4   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16-8s_v3    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16-8s_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E16_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E20ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E20d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E20s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E20s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E20_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E20_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E2ds_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E2d_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E2s_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E2s_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E2_v3        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E2_v4        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32-16ds_v4  1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32-16s_v3   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32-16s_v4   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32-8ds_v4   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32-8s_v3    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32-8s_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E32_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4-2ds_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4-2s_v3     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4-2s_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E48ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E48d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E48s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E48s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E48_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E48_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4ds_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4d_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4s_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4s_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4_v3        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E4_v4        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64-16ds_v4  1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64-16s_v3   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64-16s_v4   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64-32ds_v4  1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64-32s_v3   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64-32s_v4   1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64ds_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64d_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64is_v3     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64i_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64s_v3      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64s_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E64_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8-2ds_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8-2s_v3     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8-2s_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8-4ds_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8-4s_v3     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8-4s_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E80ids_v4    1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E80is_v4     1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8ds_v4      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8d_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8s_v3       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8s_v4       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8_v3        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_E8_v4        1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F1           1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F16          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F16s         1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F16s_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F1s          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F2           1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F2s          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F2s_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F32s_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F4           1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F48s_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F4s          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F4s_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F64s_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F72s_v2      1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F8           1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F8s          1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_F8s_v2       1,2,3    NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2
+virtualMachines   southeastasia  Standard_HC44rs       2        None
+virtualMachines   southeastasia  Standard_L16s_v2      1,2,3    ['NotAvailableForSubscription, type: Location, locations: southeastasia', 'NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2']
+virtualMachines   southeastasia  Standard_L32s_v2      1,2,3    ['NotAvailableForSubscription, type: Location, locations: southeastasia', 'NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2']
+virtualMachines   southeastasia  Standard_L48s_v2      1,2,3    ['NotAvailableForSubscription, type: Location, locations: southeastasia', 'NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2']
+virtualMachines   southeastasia  Standard_L64s_v2      1,2,3    ['NotAvailableForSubscription, type: Location, locations: southeastasia', 'NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2']
+virtualMachines   southeastasia  Standard_L80s_v2      1,2,3    ['NotAvailableForSubscription, type: Location, locations: southeastasia', 'NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2']
+virtualMachines   southeastasia  Standard_L8s_v2       1,2,3    ['NotAvailableForSubscription, type: Location, locations: southeastasia', 'NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 2']
+virtualMachines   southeastasia  Standard_M128         1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M128-32ms    1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M128-64ms    1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M128dms_v2   1,2      None
+virtualMachines   southeastasia  Standard_M128ds_v2    1,2      None
+virtualMachines   southeastasia  Standard_M128m        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M128ms       1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M128ms_v2    1,2      None
+virtualMachines   southeastasia  Standard_M128s        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M128s_v2     1,2      None
+virtualMachines   southeastasia  Standard_M16-4ms      1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M16-8ms      1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M16ms        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M192idms_v2  1,2      None
+virtualMachines   southeastasia  Standard_M192ids_v2   1,2      None
+virtualMachines   southeastasia  Standard_M192ims_v2   1,2      None
+virtualMachines   southeastasia  Standard_M192is_v2    1,2      None
+virtualMachines   southeastasia  Standard_M32-16ms     1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M32-8ms      1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M32dms_v2    1,2      None
+virtualMachines   southeastasia  Standard_M32ls        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M32ms        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M32ms_v2     1,2      None
+virtualMachines   southeastasia  Standard_M32ts        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64          1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64-16ms     1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64-32ms     1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64dms_v2    1,2      None
+virtualMachines   southeastasia  Standard_M64ds_v2     1,2      None
+virtualMachines   southeastasia  Standard_M64ls        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64m         1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64ms        1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64ms_v2     1,2      None
+virtualMachines   southeastasia  Standard_M64s         1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M64s_v2      1,2      None
+virtualMachines   southeastasia  Standard_M8-2ms       1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M8-4ms       1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_M832ixs      2        None
+virtualMachines   southeastasia  Standard_M8ms         1,2      NotAvailableForSubscription, type: Zone, locations: southeastasia, zones: 3
+virtualMachines   southeastasia  Standard_NC12s_v2     2        NotAvailableForSubscription, type: Location, locations: southeastasia
+virtualMachines   southeastasia  Standard_NC24rs_v2    2        NotAvailableForSubscription, type: Location, locations: southeastasia
+virtualMachines   southeastasia  Standard_NC24s_v2     2        NotAvailableForSubscription, type: Location, locations: southeastasia
+virtualMachines   southeastasia  Standard_NC6s_v2      2        NotAvailableForSubscription, type: Location, locations: southeastasia
