@@ -27,10 +27,6 @@ https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-
 3. please change the Standard BS Family vCPUs to 20 (which means we can have 10 * 2vCPU VM)
 
 
-# az vm list-skus -l southeastasia
-
-
-
 ## az vm list-sizes -l southeastasia
 
 https://azureprice.net/ for VM pricing comparison
