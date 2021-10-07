@@ -45,11 +45,9 @@ az login
 
 # 2. Set default location and create resources group
 ```
+az group delete --name devsecops --yes
 az config set defaults.location=southeastasia 
 az group create --name devsecops
-
-
-
 
 ```
 Example output
@@ -58,7 +56,6 @@ Location       Name
 -------------  ---------
 southeastasia  devsecops
 ```
-#### az group delete --name devsecops --yes
 
 # 3. create VM for devsecops workshop
 ```
@@ -70,8 +67,34 @@ az vm create --resource-group devsecops \
   --generate-ssh-keys \
   --os-disk-size-gb 80 \
   --custom-data cloud-init.txt
-
 ```
+
+## 3.1 cloud-config.txt
+```
+#cloud-config
+
+packages:
+  - curl
+  - sudo
+  - docker
+  - wget 
+  - iputils 
+  - vim
+
+# create the docker group
+groups:
+  - docker
+
+# Add default auto created user to docker group
+system_info:
+  default_user:
+    groups: [docker]
+    
+runcmd:
+  - sudo systemctl enable docker
+  - sudo systemctl start docker
+```
+
 Example output
 ```
 ResourceGroup    PowerState    PublicIpAddress    Fqdns    PrivateIpAddress    MacAddress         Location       Zones
@@ -81,6 +104,8 @@ devsecops        VM running    52.163.231.164              10.0.0.4            0
 # 4. open ALL VM port 
 
 ```
+az vm open-port -g devsecops -n rke-w1 --port '*'
+
 az vm open-port --ids $(az vm list -g devsecops --query "[].id" -o tsv) --port '*'
 ```
 Example output
