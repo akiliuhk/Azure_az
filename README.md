@@ -47,6 +47,10 @@ az login
 ```
 az config set defaults.location=southeastasia 
 az group create --name devsecops
+
+
+
+
 ```
 Example output
 ```
@@ -54,14 +58,10 @@ Location       Name
 -------------  ---------
 southeastasia  devsecops
 ```
+#### az group delete --name devsecops --yes
 
 # 3. create VM for devsecops workshop
 ```
-
-az group delete --name devsecops --yes
-
-az group create --name devsecops
-
 az vm create --resource-group devsecops \
   --name rke-w1 \
   --admin-username devsecops \
