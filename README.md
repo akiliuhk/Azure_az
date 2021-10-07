@@ -71,6 +71,7 @@ az login
 # 2. Set default location and create resources group
 ```
 az group delete --name devsecops --yes
+
 az config set defaults.location=southeastasia 
 az group create --name devsecops
 
@@ -82,17 +83,41 @@ Location       Name
 southeastasia  devsecops
 ```
 
+
+az sshkey create --resource-group "devsecops" --name "devsecops_sshkey"
+
+az sshkey list
+```
+Private key is saved to "/Users/akiliu/.ssh/1633588833_8372638".
+Public key is saved to "/Users/akiliu/.ssh/1633588833_8372638.pub".
+Location       Name              PublicKey                                                         ResourceGroup
+-------------  ----------------  ----------------------------------------------------------------  ---------------
+southeastasia  devsecops_sshkey  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHl0JEKjE2YXq+qp/gCvX0wHBc  DEVSECOPS
+                                 uE1cPCd8C0ZcSrpjIBwCdF+mKcrob6HvCNPLCXqj9+lusGBRL6j3bD5FfbZs9P0o
+                                 k26y4n/xVEN/E6X5aVtAAYa/i+szDzrYtdCBztQbihmAobBxXB6WrY0kwzlkvNp7
+                                 wX/VOLz63hNbyzy51VOZTxZeXBMQJ/oA8J6zssimvevXxVKtuH6UD4IF/C0AtN6s
+                                 WvCxi285nu7+HvOx8MOqmQmR10drU0yqqrez7bcIqq1ZrHFebMA45susFr7z0IGc
+                                 UVg/8hywdaNNvA8ldBF6HPacVSilVMwJn1FK5henN2FbwEPGT2seGXscRkWuiBlL
+                                 eySdBAXg7Deo3L8O0y3KtKnqyu9oxIFuEwFXiTc0VrRthg5zDvPUZIpZQbv9YQEc
+                                 TKxmxybcE2Z3pO7DxLQwS2GlKrgv6rGWtTXT2w0Ru7zokvDzm4fBkv/fV54lZjd6
+                                 vsEzxvOfYB6Bo4yxkvuHjEivqG4AFSiCs02OpSk= generated-by-azure
+```
 # 3. create VM for devsecops workshop
+
 ```
 az vm create --resource-group devsecops \
   --name rancher \
   --admin-username devsecops \
   --image SUSE:opensuse-leap-15-3:gen2:2021.07.08 \
   --size Standard_B2s \
-  --generate-ssh-keys \
+  --ssh-key-name devsecops_sshkey \
   --os-disk-size-gb 80 \
   --custom-data cloud-init.txt
 ```
+
+ [--ssh-dest-key-path]
+             [--ssh-key-name]
+             [--ssh-key-values]
 
 ## 3.1 cloud-config.txt
 ```
