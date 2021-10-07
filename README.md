@@ -40,12 +40,12 @@ Bs-series
 Bs-series are economical virtual machines that provide a low-cost option for workloads that typically run at a low to moderate baseline CPU performance, but sometimes need to burst to significantly higher CPU performance when the demand rises. These workloads don’t require the use of the full CPU all the time, but occasionally will need to burst to finish some tasks more quickly. Many applications such as development and test servers, low traffic web servers, small databases, micro services, servers for proof-of-concepts, build servers, and code repositories fit into this model.
 
 ```
-Size            vCPUs 	Memory(GiB)	    Temporary Storage        Linux Cost	
-Standard_B1s  	   1	      1 GiB	         4 GiB                  $0.0132/hour
-Standard_B1ms	   1	      2 GiB	         4 GiB                  $0.0264/hour
-Standard_B2s	   2	      4 GiB	         8 GiB 	                $0.0528/hour
-Standard_B2ms	   2	      8 GiB	         16 GiB	                $0.106/hour
-Standard_B4ms	   4	      16 GiB         32 GiB	                $0.211/hour
+Size             vCPUs 	     Memory(GiB)	    Temporary Storage       Linux Cost	
+Standard_B1s  	   1	      1 GiB	             4 GiB                  $0.0132/hour
+Standard_B1ms	   1	      2 GiB	             4 GiB                  $0.0264/hour
+Standard_B2s	   2	      4 GiB	             8 GiB 	                $0.0528/hour
+Standard_B2ms	   2	      8 GiB	             16 GiB	                $0.106/hour
+Standard_B4ms	   4	      16 GiB             32 GiB	                $0.211/hour
 
 ```
 # az vm image list -f OpenSUSE --all
@@ -83,25 +83,6 @@ Location       Name
 southeastasia  devsecops
 ```
 
-
-az sshkey create --resource-group "devsecops" --name "devsecops_sshkey"
-
-az sshkey list
-```
-Private key is saved to "/Users/akiliu/.ssh/1633588833_8372638".
-Public key is saved to "/Users/akiliu/.ssh/1633588833_8372638.pub".
-Location       Name              PublicKey                                                         ResourceGroup
--------------  ----------------  ----------------------------------------------------------------  ---------------
-southeastasia  devsecops_sshkey  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHl0JEKjE2YXq+qp/gCvX0wHBc  DEVSECOPS
-                                 uE1cPCd8C0ZcSrpjIBwCdF+mKcrob6HvCNPLCXqj9+lusGBRL6j3bD5FfbZs9P0o
-                                 k26y4n/xVEN/E6X5aVtAAYa/i+szDzrYtdCBztQbihmAobBxXB6WrY0kwzlkvNp7
-                                 wX/VOLz63hNbyzy51VOZTxZeXBMQJ/oA8J6zssimvevXxVKtuH6UD4IF/C0AtN6s
-                                 WvCxi285nu7+HvOx8MOqmQmR10drU0yqqrez7bcIqq1ZrHFebMA45susFr7z0IGc
-                                 UVg/8hywdaNNvA8ldBF6HPacVSilVMwJn1FK5henN2FbwEPGT2seGXscRkWuiBlL
-                                 eySdBAXg7Deo3L8O0y3KtKnqyu9oxIFuEwFXiTc0VrRthg5zDvPUZIpZQbv9YQEc
-                                 TKxmxybcE2Z3pO7DxLQwS2GlKrgv6rGWtTXT2w0Ru7zokvDzm4fBkv/fV54lZjd6
-                                 vsEzxvOfYB6Bo4yxkvuHjEivqG4AFSiCs02OpSk= generated-by-azure
-```
 # 3. create VM for devsecops workshop
 
 ```
@@ -114,10 +95,6 @@ az vm create --resource-group devsecops \
   --os-disk-size-gb 80 \
   --custom-data cloud-init.txt
 ```
-
- [--ssh-dest-key-path]
-             [--ssh-key-name]
-             [--ssh-key-values]
 
 ## 3.1 cloud-config.txt
 ```
