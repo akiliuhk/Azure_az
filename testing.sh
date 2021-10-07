@@ -10,3 +10,7 @@ az vm create --resource-group devsecops \
   --custom-data cloud-init.txt
 
 az vm open-port -g devsecops -n $1 --port '*'
+
+az vm show -d -g devsecops -n $1 --query publicIps -o tsv
+
+

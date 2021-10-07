@@ -160,8 +160,21 @@ rke-w2   devsecops        VM running    40.65.135.87            southeastasia
 rke-w3   devsecops        VM running    52.230.36.125           southeastasia
 ```
 
-# 6. ssh into VM
+# 6. get specified VM public IP address by VM name
 
 ```
-ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no devsecops@52.187.178.1
+az vm show -d -g devsecops -n rancher --query publicIps -o tsv
 ```
+Example output
+```
+52.187.74.168
+```
+
+# 7. ssh into VM
+
+```
+export ip=$(az vm show -d -g devsecops -n rancher --query publicIps -o tsv)
+
+ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no devsecops@$ip
+```
+
