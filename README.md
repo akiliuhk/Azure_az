@@ -142,11 +142,14 @@ Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Z
 rancher  devsecops        VM running    52.187.178.1            southeastasia
 
 ```
-# 4. open ALL VM port 
+# 4. open ALL ports per VM
 
 ```
 az vm open-port -g devsecops -n rke-w1 --port '*'
+```
 
+## open ALL ports to All VM per resources group 
+```
 az vm open-port --ids $(az vm list -g devsecops --query "[].id" -o tsv) --port '*'
 ```
 Example output
