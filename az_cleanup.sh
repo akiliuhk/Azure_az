@@ -1,12 +1,7 @@
 #!/bin/bash -ex
 
-
-
-
 # delete all resources
 az group delete --name devsecops --yes
-
-az vm delete -g devsecops -n MyVm --yes
 
 
 
