@@ -59,6 +59,9 @@ opensuse-leap-15-3  SUSE                                gen1       SUSE:opensuse
 opensuse-leap-15-3  SUSE                                gen2       SUSE:opensuse-leap-15-3:gen2:2021.07.08                          2021.07.08
 ```
 
+# Example guide of Azure vm create
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-automate-vm-deployment
+
 
 # 1. az login
 ```
