@@ -60,7 +60,7 @@ southeastasia  devsecops
 # 3. create VM for devsecops workshop
 ```
 az vm create --resource-group devsecops \
-  --name rke-w1 \
+  --name rancher \
   --admin-username devsecops \
   --image SUSE:opensuse-leap-15-3:gen2:2021.07.08 \
   --size Standard_B2s \
@@ -95,11 +95,15 @@ runcmd:
   - sudo systemctl start docker
 ```
 
-Example output
+Example output for 5 vm
 ```
-ResourceGroup    PowerState    PublicIpAddress    Fqdns    PrivateIpAddress    MacAddress         Location       Zones
----------------  ------------  -----------------  -------  ------------------  -----------------  -------------  -------
-devsecops        VM running    52.163.231.164              10.0.0.4            00-0D-3A-C6-AF-1C  southeastasia
+Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Zones
+-------  ---------------  ------------  -------------  -------  -------------  -------
+rancher  devsecops        VM running    52.187.178.1            southeastasia
+rke-m1   devsecops        VM running    20.205.191.36           southeastasia
+rke-w1   devsecops        VM running    52.230.39.211           southeastasia
+rke-w2   devsecops        VM running    40.65.135.87            southeastasia
+rke-w3   devsecops        VM running    52.230.36.125           southeastasia
 ```
 # 4. open ALL VM port 
 
