@@ -53,7 +53,7 @@ https://azure.microsoft.com/en-us/pricing/details/managed-disks/#pricing
 ```
 Premium SSD LRS	
 
-Type    Disk Size	Cost/hour       Price per month	    Max IOPS (Max IOPS w/ bursting)	    Max throughput (Max throughput w/ bursting)
+Type    Disk Size	    Cost/hour       Price per month	    Max IOPS (Max IOPS w/ bursting)	    Max throughput (Max throughput w/ bursting)
 P6	    64 GiB	     $0.0136               $10.21	            240 (3,500)	                        50 MB/second (170 MB/second)
 P10	    128 GiB	     $0.0262               $19.71	            500 (3,500)	                        100 MB/second (170 MB/second)
 P15	    256 GiB	     $0.0507               $38.02	            1,100 (3,500)	                    125 MB/second (170 MB/second)
