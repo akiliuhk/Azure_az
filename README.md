@@ -109,7 +109,7 @@ az vm create --resource-group devsecops \
   --image SUSE:opensuse-leap-15-3:gen2:2021.07.08 \
   --size Standard_B2s \
   --ssh-key-name devsecops_sshkey \
-  --os-disk-size-gb 80 \
+  --os-disk-size-gb 100 \
   --custom-data cloud-init.txt
 ```
 
