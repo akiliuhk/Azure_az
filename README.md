@@ -83,6 +83,13 @@ devsecops        VM running    52.163.231.164              10.0.0.4            0
 ```
 az vm open-port --ids $(az vm list -g devsecops --query "[].id" -o tsv) --port '*'
 ```
+Example output
+```
+Location       Name        ProvisioningState    ResourceGroup    ResourceGuid
+-------------  ----------  -------------------  ---------------  ------------------------------------
+southeastasia  rancherNSG  Succeeded            devsecops        916c44e3-5171-4ba0-a3dd-9f44b3cee145
+southeastasia  rke-m1NSG   Succeeded            devsecops        31ed7213-ea37-48b5-85d9-a508ce219da9
+```
 
 # 5. get VM info
 
