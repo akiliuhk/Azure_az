@@ -27,25 +27,39 @@ https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-
 3. please change the Standard BS Family vCPUs to 20 (which means we can have 10 * 2vCPU VM)
 
 
-
 # az vm list-skus -l southeastasia
 
-## az vm list-sizes -l southeastasia
-### https://azureprice.net/ for VM pricing comparison
-### https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
 
-- checked the Bs-series VM is the cheapest we can found and comparable to AWS Lightsail
+
+## az vm list-sizes -l southeastasia
+
+https://azureprice.net/ for VM pricing comparison
+
+https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
+
+- checked the Bs-series VM is the cheapest we can found and the cost is comparable to AWS Lightsail
 
 Bs-series
 Bs-series are economical virtual machines that provide a low-cost option for workloads that typically run at a low to moderate baseline CPU performance, but sometimes need to burst to significantly higher CPU performance when the demand rises. These workloads don’t require the use of the full CPU all the time, but occasionally will need to burst to finish some tasks more quickly. Many applications such as development and test servers, low traffic web servers, small databases, micro services, servers for proof-of-concepts, build servers, and code repositories fit into this model.
 
 ```
-Size             vCPUs 	     Memory(GiB)	    Linux Cost	
-Standard_B1s        1            1 GiB          $0.0132/hour
-Standard_B1ms       1            2 GiB          $0.0264/hour
-Standard_B2s        2            4 GiB          $0.0528/hour
-Standard_B2ms       2            8 GiB          $0.106/hour
-Standard_B4ms       4            16 GiB         $0.211/hour
+Size             vCPUs 	     Memory(GiB)	    Cost/hour         Monthly Cost/750hour	
+Standard_B1s        1            1 GiB          $0.0132/hour        $9.9
+Standard_B1ms       1            2 GiB          $0.0264/hour        $19.8
+Standard_B2s        2            4 GiB          $0.0528/hour        $39.6
+Standard_B2ms       2            8 GiB          $0.106/hour         $79.5
+Standard_B4ms       4            16 GiB         $0.211/hour         $158.25
+```
+
+## Premium SSD LRS pricing
+https://azure.microsoft.com/en-us/pricing/details/managed-disks/#pricing
+
+Premium SSD LRS	Disk Size	Price per month	Max IOPS (Max IOPS w/ bursting)	Max throughput (Max throughput w/ bursting)	Price per mount per month (Shared Disk)
+					
+P6	64 GiB	$10.21	240 (3,500)	50 MB/second (170 MB/second)	$0.62
+P10	128 GiB	$19.71	500 (3,500)	100 MB/second (170 MB/second)	$1.19
+P15	256 GiB	$38.02	1,100 (3,500)	125 MB/second (170 MB/second)	$2.38
+
 
 ```
 # az vm image list -f OpenSUSE --all
