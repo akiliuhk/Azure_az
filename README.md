@@ -60,8 +60,8 @@ southeastasia  devsecops
 
 az group delete --name devsecops --yes
 
-
 az group create --name devsecops
+
 az vm create --resource-group devsecops \
   --name rke-w1 \
   --admin-username devsecops \
@@ -78,4 +78,21 @@ ResourceGroup    PowerState    PublicIpAddress    Fqdns    PrivateIpAddress    M
 ---------------  ------------  -----------------  -------  ------------------  -----------------  -------------  -------
 devsecops        VM running    52.163.231.164              10.0.0.4            00-0D-3A-C6-AF-1C  southeastasia
 ```
-# 4. get VM information
+# 4. open ALL VM port 
+
+```
+az vm open-port --ids $(az vm list -g devsecops --query "[].id" -o tsv) --port '*'
+```
+
+# 5. get VM info
+
+```
+az vm list -g devsecops -d
+```
+Example output
+```
+Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Zones
+-------  ---------------  ------------  -------------  -------  -------------  -------
+rancher  devsecops        VM running    52.187.178.1            southeastasia
+rke-m1   devsecops        VM running    20.205.191.36           southeastasia
+```

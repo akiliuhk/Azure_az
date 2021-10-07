@@ -20,4 +20,3 @@ system_info:
 runcmd:
   - sudo systemctl enable docker
   - sudo systemctl start docker
-  - zypper in -y -t pattern yast2_basis

@@ -89,12 +89,6 @@ az vm create --resource-group devsecops \
   --os-disk-size-gb 80 \
   --custom-data cloud-init.txt
 
-
-VM1_IP_ADDR=$(az network public-ip show --ids $IP_ID \
-  --query ipAddress \
-  -o tsv)
-   
-ssh -i id_rsa -o StrictHostKeyChecking=no devsecops@$VM1_IP_ADDR
 ```
 Example output
 ```
@@ -105,6 +99,13 @@ devsecops        VM running    52.163.231.164              10.0.0.4            0
 # 4. get VM information
 
 ```
+
+VM1_IP_ADDR=$(az network public-ip show --ids $IP_ID \
+  --query ipAddress \
+  -o tsv)
+   
+ssh -i id_rsa -o StrictHostKeyChecking=no devsecops@$VM1_IP_ADDR
+
 
 az vm list -g devsecops -d
 

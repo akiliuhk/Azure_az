@@ -9,3 +9,4 @@ az vm create --resource-group devsecops \
   --generate-ssh-keys \
   --os-disk-size-gb 80 \
   --custom-data cloud-init.txt
+  --no-wait
