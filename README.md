@@ -157,3 +157,10 @@ Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Z
 rancher  devsecops        VM running    52.187.178.1            southeastasia
 rke-m1   devsecops        VM running    20.205.191.36           southeastasia
 ```
+
+
+# 6. ssh into VM
+
+```
+ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no devsecops@52.187.178.1
+```
