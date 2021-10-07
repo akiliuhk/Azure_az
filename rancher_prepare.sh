@@ -12,7 +12,3 @@ function install_rancher() {
 
 
 install_rancher $1
-
-
-runcmd:
-  - curl -fsSL https://get.docker.com -o get-docker.sh; sh get-docker.sh
