@@ -120,15 +120,12 @@ runcmd:
   - sudo systemctl start docker
 ```
 
-Example output for 5 vm
+Example output
 ```
 Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Zones
 -------  ---------------  ------------  -------------  -------  -------------  -------
 rancher  devsecops        VM running    52.187.178.1            southeastasia
-rke-m1   devsecops        VM running    20.205.191.36           southeastasia
-rke-w1   devsecops        VM running    52.230.39.211           southeastasia
-rke-w2   devsecops        VM running    40.65.135.87            southeastasia
-rke-w3   devsecops        VM running    52.230.36.125           southeastasia
+
 ```
 # 4. open ALL VM port 
 
@@ -156,6 +153,9 @@ Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Z
 -------  ---------------  ------------  -------------  -------  -------------  -------
 rancher  devsecops        VM running    52.187.178.1            southeastasia
 rke-m1   devsecops        VM running    20.205.191.36           southeastasia
+rke-w1   devsecops        VM running    52.230.39.211           southeastasia
+rke-w2   devsecops        VM running    40.65.135.87            southeastasia
+rke-w3   devsecops        VM running    52.230.36.125           southeastasia
 ```
 
 
