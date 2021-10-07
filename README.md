@@ -12,9 +12,9 @@ Standard BS Family vCPUs                  4               10
 ```
 # az vm list-skus -l southeastasia
 
-# az vm list-sizes -l southeastasia
-# https://azureprice.net/ for VM pricing comparison
-# https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
+## az vm list-sizes -l southeastasia
+### https://azureprice.net/ for VM pricing comparison
+### https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
 
 
 ```
