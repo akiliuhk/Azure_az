@@ -54,6 +54,7 @@ Standard_B4ms       4            16 GiB         $0.211/hour         $158.25
 ## Premium SSD LRS pricing
 https://azure.microsoft.com/en-us/pricing/details/managed-disks/#pricing
 
+```
 Premium SSD LRS	Disk Size	Price per month	Max IOPS (Max IOPS w/ bursting)	Max throughput (Max throughput w/ bursting)	Price per mount per month (Shared Disk)
 					
 P6	64 GiB	$10.21	240 (3,500)	50 MB/second (170 MB/second)	$0.62
