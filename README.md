@@ -1,4 +1,4 @@
-# Azure_az
+# Azure az vm basic usage
 
 # Azure vCPU limitation 
 #### Azure Account default 4vCPU for Free trial account
@@ -157,7 +157,6 @@ rke-w1   devsecops        VM running    52.230.39.211           southeastasia
 rke-w2   devsecops        VM running    40.65.135.87            southeastasia
 rke-w3   devsecops        VM running    52.230.36.125           southeastasia
 ```
-
 
 # 6. ssh into VM
 
