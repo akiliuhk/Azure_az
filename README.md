@@ -82,7 +82,6 @@ az login
 
 # 2. Set default location and create resources group
 ```
-az group delete --name devsecops --yes
 
 az config set defaults.location=southeastasia 
 az group create --name devsecops
@@ -193,3 +192,8 @@ export ip=$(az vm show -d -g devsecops -n rancher --query publicIps -o tsv)
 ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no devsecops@$ip
 ```
 
+
+# Delete resources group devsecops
+```
+az group delete --name devsecops --yes
+```
