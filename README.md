@@ -193,7 +193,7 @@ ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no devsecops@$ip
 ```
 
 
-# Delete resources group devsecops
+# Delete resources group devsecops to cleanup all resources
 ```
 az group delete --name devsecops --yes
 ```
