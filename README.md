@@ -33,7 +33,7 @@ https://azureprice.net/ for VM pricing comparison
 
 https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
 
-- checked the Bs-series VM is the cheapest we can found and the cost is comparable to AWS Lightsail
+### the Bs-series VM is the cheapest we can found and the cost is comparable to AWS Lightsail
 
 Bs-series
 Bs-series are economical virtual machines that provide a low-cost option for workloads that typically run at a low to moderate baseline CPU performance, but sometimes need to burst to significantly higher CPU performance when the demand rises. These workloads don’t require the use of the full CPU all the time, but occasionally will need to burst to finish some tasks more quickly. Many applications such as development and test servers, low traffic web servers, small databases, micro services, servers for proof-of-concepts, build servers, and code repositories fit into this model.
