@@ -8,6 +8,7 @@ rm -fr ~/$tags-lab-info
 rm -f ~/$tags-lab-info.tar.gz
 
 az group delete --name $tags --yes
+
 }
 
 delete-instance $1

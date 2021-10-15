@@ -4,7 +4,7 @@
 function main(){
 local tags=$1
 create-key-pair $tags
-create-bucket $tags $tags-s3
+create-bucket $tags
 create-instances $tags $tags-rancher
 create-instances $tags $tags-rke-m1 
 create-instances $tags $tags-rke-w1
@@ -49,7 +49,7 @@ sleep 1
 mkdir -p ~/$tags-lab-info/
 sleep 1
 
-az vm create --resource-group devsecops \
+az vm create --resource-group $tags \
   --name $VMname \
   --admin-username az-user \
   --image SUSE:opensuse-leap-15-3:gen2:2021.07.08 \
@@ -57,7 +57,8 @@ az vm create --resource-group devsecops \
   --generate-ssh-keys \
   --os-disk-size-gb 80 \
   --custom-data cloud-config.txt \
-  --verbose
+  --no-wait \
+  --verbose 
 }
 
 ### open ports for AWS Lightsail VM
@@ -67,14 +68,13 @@ local VMname=$2
 sleep 1
 
 az vm open-port -g $tags -n $VMname --port 22,80,443,2376,2379-2380,6443,10250,10254,30000-32767 --priority 100
-
 }
 
 
 ### get AWS Lightsail instance
 function get-instances(){
 local tags=$1
-az vm list -g $tags -d | grep $tags > ~/$tags-lab-info/$tags-get-instances.txt
+az vm list -g $tags -d > ~/$tags-lab-info/$tags-get-instances.txt
 }
 
 ### ssh command into file
@@ -84,10 +84,6 @@ local VMname=$2
 
 local ip=$(az vm show -d -g $tags -n $VMname --query publicIps -o tsv)
 
-ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no az-user@$ip
-
-
-local ip=`az vm show -d -g devsecops -n $1 --query publicIps -o tsv`
 echo "ssh -i ~/$tags-lab-info/$tags-default-key.pem -o StrictHostKeyChecking=no az-user@"$ip > ~/$tags-lab-info/ssh-$VMname.sh
 chmod 755 ~/$tags-lab-info/ssh-$VMname.sh
 }
@@ -121,14 +117,23 @@ tar -cvzf $tags-lab-info.tar.gz $tags-lab-info
 
 function create-bucket(){
 local tags=$1
-local s3=$2
-az storage account create -g $tags -n $s3 --sku Standard_LRS
+local s3=`openssl rand -hex 12`
+
+az storage account check-name -n $s3
+
+az storage account create -g $tags -n $s3 \
+  --access-tier Cool \
+  --allow-blob-public-access true \
+  --kind BlobStorage \
+  --assign-identity \
+  --sku Standard_LRS
 
 sleep 1
 
+az storage account show -g $tags -n $s3 > ~/$tags-lab-info/$tags-s3-bucket.txt
 #sed -i "" '16,$d'  ~/$tags-lab-info/$tags-s3-bucket.txt
 
-
+az storage account show-connection-string -g $tags -n $s3 > ~/$tags-lab-info/$tags-s3-bucket-accessKeys.txt
 #sed -i "" '11,$d'  ~/$tags-lab-info/$tags-s3-bucket-accessKeys.txt
 }
 
