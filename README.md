@@ -114,14 +114,16 @@ southeastasia  devsecops
 # 3. create VM for devsecops workshop
 
 ```
-az vm create --resource-group devsecops \
-  --name rancher \
+az vm create --resource-group $tags \
+  --name $VMname \
   --admin-username az-user \
   --image SUSE:opensuse-leap-15-3:gen2:2021.07.08 \
   --size Standard_B2s \
-  --ssh-key-name devsecops_sshkey \
-  --os-disk-size-gb 100 \
-  --custom-data cloud-init.txt
+  --generate-ssh-keys \
+  --os-disk-size-gb 80 \
+  --custom-data cloud-config.txt \
+  --no-wait \
+  --verbose 
 ```
 
 ## cloud-config.txt
@@ -160,7 +162,7 @@ rancher  devsecops        VM running    52.187.178.1            southeastasia
 # open ALL ports per VM
 
 ```
-az vm open-port -g devsecops -n rke-w1 --port '*'
+az vm open-port -g $tags -n $VMname --port 22,80,443,2376,2379-2380,6443,10250,10254,30000-32767 --priority 100
 ```
 
 ## open ALL ports to All VM per resources group 
