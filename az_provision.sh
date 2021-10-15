@@ -37,8 +37,7 @@ sleep 1
 az group create --name $tags
 cp -pr ~/.ssh/id_rsa ~/$tags-lab-info/$tags-default-key.pem
 chmod 600 ~/$tags-lab-info/$tags-default-key.pem
-#aws lightsail download-default-key-pair --output text --query publicKeyBase64 > ~/$1-lab-info/$1-default-key.pub
-#aws lightsail download-default-key-pair --output text --query privateKeyBase64 > ~/$1-lab-info/$1-default-key.pem
+
 }
 
 ### create AWS Lightsail VM
