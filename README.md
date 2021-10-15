@@ -5,9 +5,8 @@
 #### Azure Account default 10vCPU for PAYG account
 
 Example error output when reached 4vCPU limitation as a free trial account
-```
-{"error":{"code":"InvalidTemplateDeployment","message":"The template deployment 'vm_deploy_UbiBOqlV5EWbnWWjQliH3AQRkso948dP' is not valid according to the validation procedure. The tracking id is '7b0fbbcc-41cd-4144-8426-9f3d011b373c'. See inner errors for details.","details":[{"code":"QuotaExceeded","message":"Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: southeastasia, Current Limit: 4, Current Usage: 4, Additional Required: 2, (Minimum) New Limit Required: 6. Submit a request for Quota increase at https://aka.ms/ProdportalCRP/#blade/Microsoft_Azure_Capacity/CapacityExperienceBlade/Parameters/%7B%22subscriptionId%22:%22c0396603-64f0-4b16-9396-9d30ed0eae05%22,%22command%22:%22openQuotaApprovalBlade%22,%22quotas%22:[%7B%22location%22:%22southeastasia%22,%22providerId%22:%22Microsoft.Compute%22,%22resourceName%22:%22cores%22,%22quotaRequest%22:%7B%22properties%22:%7B%22limit%22:6,%22unit%22:%22Count%22,%22name%22:%7B%22value%22:%22cores%22%7D%7D%7D%7D]%7D by specifying parameters listed in the ‘Details’ section for deployment to succeed. Please read more about quota limits at https://docs.microsoft.com/en-us/azure/azure-supportability/regional-quota-requests"}]}}
-```
+![vCPU_limit](azure_vCPU.png)
+
 #### az vm list-usage -l southeastasia
 ```
 Name                                      CurrentValue    Limit

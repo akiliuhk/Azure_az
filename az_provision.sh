@@ -127,6 +127,11 @@ az storage account create -g $tags -n $s3 \
   --assign-identity \
   --sku Standard_LRS
 
+az storage container create -n $s3 --public-access blob
+
+az storage account keys list -g $tags -n $s3
+
+
 sleep 1
 
 az storage account show -g $tags -n $s3 > ~/$tags-lab-info/$tags-s3-bucket.txt
