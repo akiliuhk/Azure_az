@@ -4,7 +4,9 @@
 #### Azure Account default 4vCPU for Free trial account
 #### Azure Account default 10vCPU for PAYG account
 
-Example error output when reached 4vCPU limitation as a free trial account
+as a prerequisites to run the az_provision.sh, 
+please help upgrade to PAYG account and set the Standard Bs Family vCPUS to 20
+
 ![vCPU_limit](azure_vCPU.png)
 
 #### az vm list-usage -l southeastasia
