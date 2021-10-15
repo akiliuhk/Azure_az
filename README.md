@@ -75,12 +75,29 @@ opensuse-leap-15-3  SUSE                                gen2       SUSE:opensuse
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-automate-vm-deployment
 
 
-# 1. az login
+# cat /Users/<admin>/.azure/config
+
+```
+[cloud]
+name = AzureCloud
+
+[core]
+first_run = yes
+output = table
+
+[defaults]
+location = southeastasia
+
+``` 
+
+# Step by step Cli   
+
+# az login
 ```
 az login
 ```
 
-# 2. Set default location and create resources group
+# Set default location and create resources group
 ```
 
 az config set defaults.location=southeastasia 
@@ -99,7 +116,7 @@ southeastasia  devsecops
 ```
 az vm create --resource-group devsecops \
   --name rancher \
-  --admin-username devsecops \
+  --admin-username az-user \
   --image SUSE:opensuse-leap-15-3:gen2:2021.07.08 \
   --size Standard_B2s \
   --ssh-key-name devsecops_sshkey \
@@ -107,7 +124,7 @@ az vm create --resource-group devsecops \
   --custom-data cloud-init.txt
 ```
 
-## 3.1 cloud-config.txt
+## cloud-config.txt
 ```
 #cloud-config
 
@@ -131,6 +148,8 @@ system_info:
 runcmd:
   - sudo systemctl enable docker
   - sudo systemctl start docker
+  - echo "az-user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 ```
 
 Example output
@@ -140,7 +159,7 @@ Name     ResourceGroup    PowerState    PublicIps      Fqdns    Location       Z
 rancher  devsecops        VM running    52.187.178.1            southeastasia
 
 ```
-# 4. open ALL ports per VM
+# open ALL ports per VM
 
 ```
 az vm open-port -g devsecops -n rke-w1 --port '*'
@@ -158,7 +177,7 @@ southeastasia  rancherNSG  Succeeded            devsecops        916c44e3-5171-4
 southeastasia  rke-m1NSG   Succeeded            devsecops        31ed7213-ea37-48b5-85d9-a508ce219da9
 ```
 
-# 5. get VM info
+# get VM info
 
 ```
 az vm list -g devsecops -d
@@ -174,7 +193,7 @@ rke-w2   devsecops        VM running    40.65.135.87            southeastasia
 rke-w3   devsecops        VM running    52.230.36.125           southeastasia
 ```
 
-# 6. get specified VM public IP address by VM name
+# get specified VM public IP address by VM name
 
 ```
 az vm show -d -g devsecops -n rancher --query publicIps -o tsv
@@ -184,13 +203,14 @@ Example output
 52.187.74.168
 ```
 
-# 7. ssh into VM
+# ssh into VM
 
 ```
 export ip=$(az vm show -d -g devsecops -n rancher --query publicIps -o tsv)
 
 ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no devsecops@$ip
 ```
+
 
 
 # Delete resources group devsecops to cleanup all resources

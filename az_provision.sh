@@ -44,14 +44,15 @@ opensuse-leap-15-3  SUSE                                gen2       SUSE:opensuse
 
 
 ```
-Check latest URN for Ubuntu
-az vm image list --location southeastasia --offer UbuntuServer --publisher Canonical --sku 18.04 --all --output table
-az group create --name ubu1804-rg --location southeastasia
+[cloud]
+name = AzureCloud
 
-az vm create --location southeastasia --resource-group ubu1804-rg --name ubu1804 --public-ip-address-dns-name ubu1804 \
---image Canonical:UbuntuServer:18.04-DAILY-LTS:18.04.201804262 --admin-username myuser --admin-password 'SS12345678$$' \
---size Standard_B1ms \
---data-disk-sizes-gb 5 --tags environmenttype=dev owner=harry@oceanliner.com
+[core]
+first_run = yes
+output = table
+
+[defaults]
+location = southeastasia
 
 ``` 
 
