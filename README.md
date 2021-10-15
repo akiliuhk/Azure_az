@@ -127,7 +127,6 @@ az vm create --resource-group devsecops \
 ## cloud-config.txt
 ```
 #cloud-config
-
 packages:
   - curl
   - sudo
@@ -143,13 +142,12 @@ groups:
 # Add default auto created user to docker group
 system_info:
   default_user:
+    sudo: ALL=(ALL) NOPASSWD:ALL
     groups: [docker]
-    
+
 runcmd:
   - sudo systemctl enable docker
   - sudo systemctl start docker
-  - echo "az-user ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-
 ```
 
 Example output
