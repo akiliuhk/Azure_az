@@ -9,7 +9,7 @@ az vm create --resource-group devsecops \
   --size Standard_B2s \
   --generate-ssh-keys \
   --os-disk-size-gb 80 \
-  --custom-data cloud-init.txt
+  --custom-data cloud-config.txt
 
 az vm open-port -g devsecops -n $1 --port '*'
 
