@@ -4,7 +4,6 @@
 function main(){
 local tags=$1
 create-key-pair $tags
-create-bucket $tags
 create-instances $tags $tags-rancher
 create-instances $tags $tags-rke-m1 
 create-instances $tags $tags-rke-w1
@@ -113,32 +112,5 @@ cd ~
 tar -cvzf $tags-lab-info.tar.gz $tags-lab-info
 }
 
-
-function create-bucket(){
-local tags=$1
-local s3=`openssl rand -hex 12`
-
-az storage account check-name -n $s3
-
-az storage account create -g $tags -n $s3 \
-  --access-tier Cool \
-  --allow-blob-public-access true \
-  --kind BlobStorage \
-  --assign-identity \
-  --sku Standard_LRS
-
-az storage container create -n $s3 --public-access blob
-
-az storage account keys list -g $tags -n $s3
-
-
-sleep 1
-
-az storage account show -g $tags -n $s3 > ~/$tags-lab-info/$tags-s3-bucket.txt
-#sed -i "" '16,$d'  ~/$tags-lab-info/$tags-s3-bucket.txt
-
-az storage account show-connection-string -g $tags -n $s3 > ~/$tags-lab-info/$tags-s3-bucket-accessKeys.txt
-#sed -i "" '11,$d'  ~/$tags-lab-info/$tags-s3-bucket-accessKeys.txt
-}
-
 main $1
+

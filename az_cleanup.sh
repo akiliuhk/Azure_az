@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 ### delete azure resource group
-function delete-instance(){
+function cleanup(){
 
 local tags=$1
 rm -fr ~/$tags-lab-info
@@ -11,4 +11,4 @@ az group delete --name $tags --yes
 
 }
 
-delete-instance $1
+cleanup $1
