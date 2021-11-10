@@ -46,7 +46,7 @@ Standard_B1ms       1            2 GiB          $0.0264/hour        $19.8
 Standard_B2s        2            4 GiB          $0.0528/hour        $39.6
 Standard_B2ms       2            8 GiB          $0.106/hour         $79.5
 Standard_B4ms       4            16 GiB         $0.211/hour         $158.25
-Standard_B8ms	      8	           32 GiB         $0.422/hour         $316.5
+Standard_B8ms       8	           32 GiB         $0.422/hour         $316.5
 ```
 
 ## Premium SSD LRS pricing
