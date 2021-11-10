@@ -40,13 +40,16 @@ Bs-series
 Bs-series are economical virtual machines that provide a low-cost option for workloads that typically run at a low to moderate baseline CPU performance, but sometimes need to burst to significantly higher CPU performance when the demand rises. These workloads don’t require the use of the full CPU all the time, but occasionally will need to burst to finish some tasks more quickly. Many applications such as development and test servers, low traffic web servers, small databases, micro services, servers for proof-of-concepts, build servers, and code repositories fit into this model.
 
 ```
-Size             vCPUs 	     Memory(GiB)	    Cost/hour         Monthly Cost/750hour	
+Size             vCPUs       Memory(GiB)       Cost/hour         Monthly Cost/750hour
 Standard_B1s        1            1 GiB          $0.0132/hour        $9.9
 Standard_B1ms       1            2 GiB          $0.0264/hour        $19.8
 Standard_B2s        2            4 GiB          $0.0528/hour        $39.6
 Standard_B2ms       2            8 GiB          $0.106/hour         $79.5
 Standard_B4ms       4            16 GiB         $0.211/hour         $158.25
-Standard_B8ms       8	           32 GiB         $0.422/hour         $316.5
+Standard_B8ms       8            32 GiB         $0.422/hour         $316.5
+Standard_B12ms      12           48 GiB	        $0.634/hour         $475.5
+Standard_B16ms      16           64 GiB	        $0.845/hour         $633.75
+Standard_B20ms      20           80 GiB	        $1.056/hour         $792
 ```
 
 ## Premium SSD LRS pricing
