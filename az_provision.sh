@@ -33,6 +33,7 @@ local tags=$1
 mkdir -p ~/$tags-lab-info/
 sleep 1
 
+az configure --defaults location=southeastasia
 az group create --name $tags
 cp -pr ~/.ssh/id_rsa ~/$tags-lab-info/$tags-default-key.pem
 chmod 600 ~/$tags-lab-info/$tags-default-key.pem
